@@ -1,0 +1,81 @@
+ <!-- ##### Header Area Start ##### -->
+ <header class="header-area" *ngIf="loggedIn()">
+    <app-side-bar #sideBar></app-side-bar>
+    <!-- Top Header Area -->
+    <div class="top-header-area bg-img bg-overlay" style="background-image: url(/assets/bg-img/header.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-between">
+                <div class="col-12 col-sm-6">
+                    <!-- Top Social Info -->
+                    <div class="top-social-info">
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-5 col-xl-4">
+                    <!-- Top Search Area -->
+                    <div class="top-search-area">
+                        <form action="#" method="post">
+                            <input type="search" name="top-search" id="topSearch" placeholder="Search">
+                            <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo Area -->
+    <div class="logo-area">
+        <a routerLink="/my/dashboard"><img src="/assets/core-img/logo.png" alt=""></a>
+    </div>
+
+    <!-- Navbar Area -->
+    <div class="bueno-main-menu" id="sticker">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="buenoNav">
+
+                    <app-side-bar-toogle [sideBar]="sideBar"></app-side-bar-toogle>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li><a routerLink="/my/dashboard">Home</a></li>
+                                <li class="cn-dropdown-item has-down"><a href="#">Tatiana</a>
+                                    <ul class="dropdown">
+                                        <li><a routerLink="/my/profile">My Profile</a></li>
+                                        <li><a routerLink="/my/profile-conf">Settings</a></li>
+                                        <li><a routerLink="/my/messages">Messages</a></li>
+                                        <li><a routerLink="/my/contact">Contacts</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- Login/Register -->
+                            <div class="login-area">
+                                <a (click)="logout()">Logout</a>
+                            </div>
+                        </div>
+                        <!-- Nav End -->
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+   

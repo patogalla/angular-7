@@ -1,0 +1,4 @@
+#download-report-section{
+    overflow-y: scroll;
+    position: fixed;
+}
