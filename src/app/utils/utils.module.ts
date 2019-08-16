@@ -37,7 +37,7 @@ export function provideConfig() {
   ],
   providers:[
     services.AuthenticationService,
-    services.CookNowHttpService,
+    services.PatogallaHttpService,
     services.AuthGuard,
     {
       provide: AuthServiceConfig,

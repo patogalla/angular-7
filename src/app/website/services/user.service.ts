@@ -2,13 +2,13 @@ import { Injectable } from "@angular/core";
 import { User } from 'src/app/utils/model';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { CookNowHttpService } from 'src/app/utils/services';
+import { PatogallaHttpService } from 'src/app/utils/services';
 
 @Injectable()
 export class UserService {
 
     
-    constructor(private http:CookNowHttpService){}
+    constructor(private http:PatogallaHttpService){}
 
      /**
   POST /api/register

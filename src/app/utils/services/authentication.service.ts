@@ -5,11 +5,11 @@ import {Headers, RequestOptions, Response, URLSearchParams} from '@angular/http'
 
 import {Observable} from 'rxjs';
 import {environment} from '../../../environments/environment';
-import {CookNowHttpService} from './cn-http.service';
+import {PatogallaHttpService} from './cn-http.service';
 
 @Injectable()
 export class AuthenticationService {
-  constructor(private http: CookNowHttpService) {
+  constructor(private http: PatogallaHttpService) {
   }
  
   login(username: string, password: string): Observable<void> {
@@ -86,7 +86,7 @@ export class AuthenticationService {
   PATCH /api/profile/password
   {
     "forgot": true,
-    "email": "patogalla@gmail.com"
+    "email": "angular-7@gmail.com"
   }
   */
   forgotPassword(email: string, callbackUrl:string = '#/forgot/'): Observable<void> {

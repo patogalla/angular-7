@@ -4,12 +4,12 @@ import {Response} from '@angular/http';
 import {Observable} from 'rxjs';
 import {environment} from '../../../environments/environment';
 import {User} from '../../utils/model';
-import {CookNowHttpService} from '../../utils/services/cn-http.service';
+import {PatogallaHttpService} from '../../utils/services/cn-http.service';
 
 @Injectable()
 export class AdminUserService {
 
-  constructor(private http: CookNowHttpService) {
+  constructor(private http: PatogallaHttpService) {
   }
 
   /**

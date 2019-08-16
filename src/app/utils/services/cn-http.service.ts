@@ -7,7 +7,7 @@ import {HttpErrorResponse} from '@angular/common/http';
 import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 
 @Injectable()
-export class CookNowHttpService {
+export class PatogallaHttpService {
 
   constructor(private spinnerService: Ng4LoadingSpinnerService, private http: Http) {
   }
